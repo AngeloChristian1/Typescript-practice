@@ -1,0 +1,90 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: "system-ui";
+}
+
+.appContainer {
+  width: 90vw;
+  margin: 0px auto;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0px;
+}
+
+.heading button {
+  padding: 10px 15px;
+  background-color: white;
+  border: 0.4px solid rgb(91, 90, 90);
+  border-radius: 3px;
+}
+
+.card {
+  width: 17vw;
+  height: 60vh;
+  box-shadow: 3px 1px 6px 4px solid rgb(75, 74, 74);
+}
+.cardImg img {
+  width: 17vw;
+  height: 40vh;
+  object-fit: cover;
+  transform: scale(0.98);
+  transition: 0.4s;
+}
+.cardImg img:hover {
+  transform: scale(1);
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 17vw;
+  box-shadow: 3px 1px 6px 4px solid rgb(75, 74, 74);
+}
+.cardContent .amount::after {
+  content: "  EURO";
+  font-size: 0.85em;
+}
+.cardContent p {
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 70px;
+}
+.cardContent h4 {
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 25px;
+}
+.cardWrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: space-between;
+}
+.line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.line h5 {
+  padding: 3px 5px;
+  color: white;
+  background: rgb(93, 93, 93);
+  border-radius: 3px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.line h5:hover {
+  background: rgb(46, 46, 46);
+}
